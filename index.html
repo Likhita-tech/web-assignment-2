@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My College Event</title>
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Internal CSS -->
+    <style>
+        h1 {
+            text-align: center;
+            font-family: Georgia, serif;
+        }
+
+        .description {
+            font-size: 16px;
+            text-align: justify;
+        }
+
+        #schedule {
+            background-color: #e3f2fd;
+            padding: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Inline CSS -->
+    <h1 style="color: crimson;">My College Event</h1>
+
+    <section>
+        <h2>About the Event</h2>
+        <p class="description">
+            Our college annual fest includes technical, cultural, and sports events
+            encouraging student participation and innovation.
+        </p>
+        <button onclick="showMessage()">Know More</button>
+    </section>
+
+    <section id="schedule">
+        <h2>Event Schedule</h2>
+        <ol>
+            <li>Opening Ceremony</li>
+            <li>Tech Talks</li>
+            <li>Cultural Events</li>
+            <li>Prize Distribution</li>
+        </ol>
+    </section>
+
+    <section class="venue">
+        <h2>Venue</h2>
+        <p>Main Auditorium & Open Grounds</p>
+    </section>
+
+    <section class="register">
+        <h2>Event Registration</h2>
+        <input type="text" id="name" placeholder="Enter your name">
+        <button onclick="register()">Register</button>
+        <p id="output"></p>
+    </section>
+
+    <!-- External JavaScript -->
+    <script src="script.js"></script>
+
+</body>
+</html>
